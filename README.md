@@ -8,7 +8,8 @@ Neste repositório, serão adicionados todos os arquivos das atividades realizad
 ## Índice
 
 - [Aula 1](#aula1)
-    Clonamos o repositorio localmente
+    -Clonamos o repositorio localmente
+    -Criação de página de cadastros
 - [Aula 2](#aula2)
 
 ## Instalação
