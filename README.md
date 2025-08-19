@@ -12,7 +12,7 @@ Neste repositório, serão adicionados todos os arquivos das atividades realizad
     -Criação de página de cadastros
 - [Aula 2](aula2/)
     -Pratica 1 - Hierarquia
-    -Pratica 2 - Criação de uma pagina de currículo ou biografia envolvendo assuntos explicados em aula.
+    -Pratica 2 - Criação de uma pagina de currículo ou biografia envolvendo assuntos explicados em aula..
 
 ## Instalação
 Passos para instalar e configurar o projeto:
