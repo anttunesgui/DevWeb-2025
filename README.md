@@ -10,7 +10,7 @@ Neste repositório, serão adicionados todos os arquivos das atividades realizad
 - [Aula 1](aula1/)
     -Clonamos o repositorio localmente
     -Criação de página de cadastros
-- [Aula 2](aula2/)
+- [Aula 2](https://github.com/anttunesgui/DevWeb-2025/tree/main/aula2)
     -Pratica 1 - Hierarquia
     -Pratica 2 - Criação de uma pagina de currículo ou biografia envolvendo assuntos explicados em aula..
 
