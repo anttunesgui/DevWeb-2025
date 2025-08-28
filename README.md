@@ -1,6 +1,6 @@
 # UNIDAVI - Desenvolvimento Web 2025
 
-![Imagem ou GIF opcional do projeto]
+![https://upload.wikimedia.org/wikipedia/pt/8/8c/Catatau_%28Boo-BooBear%29.png]
 
 ## Descrição
 Neste repositório, serão adicionados todos os arquivos das atividades realizadas na disciplina de Desenvolvimento Web 1.
