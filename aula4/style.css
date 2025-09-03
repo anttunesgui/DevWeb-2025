@@ -1,0 +1,19 @@
+fieldset{
+   
+    background-color: rgb(179, 176, 176);
+    display: flex;
+    gap: 15px;
+    width: 60%;
+}
+.infos1{
+    padding: 10px;
+    background-color: rgb(147, 147, 201);
+}
+.infos2{
+    padding: 10px;
+    background-color: beige;
+}
+.infos3{
+    padding: 10px;
+    background-color: aquamarine;
+}
