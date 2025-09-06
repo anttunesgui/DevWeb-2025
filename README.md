@@ -17,7 +17,7 @@ Neste repositório, serão adicionados todos os arquivos das atividades realizad
       -Pratica 1 - Criação de uma tabela
       -Pratica 2 - Ciação de um formulário
       -Pratica 3 - Edição do formulário
-  - [Aula 4](https://github.com/anttunesgui/DevWeb-2025/tree/main/aula4)
+- [Aula 4](https://github.com/anttunesgui/DevWeb-2025/tree/main/aula4)
       -Pratica 1 - Css do formulário
       -Pratica 2 - Css do formulário
       -Pratica 3 - Css da biografia
