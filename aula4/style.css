@@ -1,8 +1,6 @@
 fieldset{
    
-    background-color: rgb(179, 176, 176);
-    display: flex;
-    gap: 15px;
+    background-color: rgb(179, 176, 176);    
     width: 60%;
 }
 .infos1{
