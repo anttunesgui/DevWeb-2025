@@ -1,0 +1,22 @@
+.negativo{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+}
+.nulo{
+    background-color: gray;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+}
+.positivo{
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+}
+.result_zero{
+    background-color: orange;
+    
+}
