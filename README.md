@@ -15,7 +15,12 @@ Neste repositório, serão adicionados todos os arquivos das atividades realizad
       -Pratica 2 - Criação de uma pagina de currículo ou biografia envolvendo assuntos explicados em aula..
 - [Aula 3](https://github.com/anttunesgui/DevWeb-2025/tree/main/aula3)
       -Pratica 1 - Criação de uma tabela
-      -Pratica 2 - 
+      -Pratica 2 - Ciação de um formulário
+      -Pratica 3 - Edição do formulário
+- [Aula 4](https://github.com/anttunesgui/DevWeb-2025/tree/main/aula4)
+      -Pratica 1 - Css do formulário
+      -Pratica 2 - Css do formulário
+      -Pratica 3 - Css da biografia
 
 ## Instalação
 Passos para instalar e configurar o projeto:
