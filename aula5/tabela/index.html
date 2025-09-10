@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="script.js"></script>
 </head>
 <body>
-    <table border="1px">
+    <table id="tabela" border="1px">
         <tr style="background-color: rgb(113, 114, 114);">
             <th rowspan="2">Aluno</th>
             <th colspan="3">Semestre 1</th>
@@ -98,5 +99,7 @@
             <td>4</td>
         </tr>
     </table>
+    <button onclick="calculaLinha()">Adicionar linha de médias</button>
+  <button onclick="calculaColuna()">Adicionar coluna de médias</button>
 </body>
 </html>
