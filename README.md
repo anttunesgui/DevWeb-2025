@@ -1,6 +1,5 @@
 # UNIDAVI - Desenvolvimento Web 2025
 
-<img src="https://upload.wikimedia.org/wikipedia/pt/8/8c/Catatau_%28Boo-BooBear%29.png" alt="Texto Alternativo">
 
 # Descrição
 Neste repositório, serão adicionados todos os arquivos das atividades realizadas na disciplina de Desenvolvimento Web 1.
@@ -21,6 +20,11 @@ Neste repositório, serão adicionados todos os arquivos das atividades realizad
       -Pratica 1 - Css do formulário
       -Pratica 2 - Css do formulário
       -Pratica 3 - Css da biografia
+      -Pratica 4 - Introdução JS
+- [Aula 5](https://github.com/anttunesgui/DevWeb-2025/tree/main/aula5)
+      -Criação de uma calculadora com 4 operações 
+
+  
 
 ## Instalação
 Passos para instalar e configurar o projeto:
