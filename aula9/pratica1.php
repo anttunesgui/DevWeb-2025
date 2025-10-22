@@ -1,5 +1,5 @@
 <?php
-    $notas=array(7,8,9,4,8);
+    $notas=array(7,7,9,4,8);
     $faltas=array(1,2,0,4);
 
     function mediaNotas($notas){
@@ -12,7 +12,7 @@
     }
 
     function verificaAprovacao($mediaNotas){
-        $aprovacao =  ($mediaNotas > 7);
+        $aprovacao =  ($mediaNotas >= 7);
         return $aprovacao;
     }
  
@@ -25,5 +25,13 @@
         return $frequencia;
     }
 
+    $mediaNotas = mediaNotas($notas);
+    echo 'Media: '. mediaNotas($notas).'<br>';
+    if (verificaAprovacao($mediaNotas)){
+        echo 'Aprovado <br>';
+    }else{
+        echo 'Reprovado <br>';
+    }
 
+    echo 'Frequencia: '.calculaFrequencia($faltas);
 ?>
