@@ -17,7 +17,7 @@
     <button type="submit">Calcular</button>
 </form>
 
-<?php
+<?php                   
 if (isset($_POST['lado_a']) && isset($_POST['lado_b'])) {
 
     $ladoA = $_POST['lado_a'];
