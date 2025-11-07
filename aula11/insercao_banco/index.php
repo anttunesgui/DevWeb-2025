@@ -1,4 +1,7 @@
 <?php
+
+require_once "../conexao.php";
+
 $nome = $_POST['nome'];
 $sbrnome = $_POST['sbrnome'];
 $email = $_POST['email'];
@@ -7,13 +10,7 @@ $cidade = $_POST['city'];
 $estado = $_POST['estado'];
 
 
-$connectionString = "host=localhost 
-                    port=5432
-                    dbname=local 
-                    user=postgres
-                    password=antunes";
-
-$connection = pg_connect($connectionString);
+$connection = conexaoBanco();
 
 
  $oDadosPessoa = array($nome,

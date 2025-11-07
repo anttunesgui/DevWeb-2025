@@ -1,13 +1,9 @@
 
 <?php
 
-$connectionString = "host=localhost 
-                    port=5432
-                    dbname=local 
-                    user=postgres
-                    password=antunes";
+require_once "conexao.php";
 
-$connection = pg_connect($connectionString);
+$connection = conexaoBanco();
 
 if($connection){
     echo "Database conectado com sucesso <br>";
