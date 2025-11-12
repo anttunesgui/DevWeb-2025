@@ -1,0 +1,97 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+body {
+  position: relative;
+}
+
+.perguntas{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.avaliacoes {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.descricao {
+  font-weight: bold;
+  color: #333;
+  font-size: 24px;
+}
+
+.avaliacoes .descricao:first-child {
+  align-self: flex-end;
+  color: #3a7d44;
+}
+
+.avaliacoes .descricao:last-child {
+  align-self: flex-start;
+  color: #d92027;
+}
+
+.botoes {
+  display: flex;
+  gap: 8px;
+  border-radius: 8px;
+}
+
+.avaliacao-botoes {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.avaliacao-botoes:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-0 { background-color: #d92027; }
+.btn-1 { background-color: #e54a4f; }
+.btn-2 { background-color: #f07167; }
+.btn-3 { background-color: #f3a261; }
+.btn-4 { background-color: #f9c74f; }
+.btn-5 { background-color: #f9dc5c; }
+.btn-6 { background-color: #b5d92e; }
+.btn-7 { background-color: #90be6d; }
+.btn-8 { background-color: #52b69a; }
+.btn-9 { background-color: #43aa8b; }
+.btn-10 { background-color: #3a7d44; }
+
+.rodape {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: #eeeff0; 
+  text-align: center;
+  color: #d4a60d; 
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  font-style: italic;
+  border-top: 1px solid #cecbcb; 
+}
