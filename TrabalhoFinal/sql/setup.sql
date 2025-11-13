@@ -22,7 +22,7 @@ CREATE TABLE perguntas (
 CREATE TABLE usuarios_administrativos (
     id_usuario_admin SERIAL PRIMARY KEY,
     login VARCHAR(100) NOT NULL UNIQUE,
-    senha VARCHAR(255) NOT NULL -- IMPORTANTE: Armazene a senha como um HASH (ex: bcrypt), não texto puro.
+    senha VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE avaliacoes (

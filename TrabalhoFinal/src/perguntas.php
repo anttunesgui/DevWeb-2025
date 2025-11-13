@@ -23,3 +23,4 @@ if (!$perguntas) {
 }
 
 echo json_encode($perguntas);
+ 
