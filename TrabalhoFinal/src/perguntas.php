@@ -1,20 +1,25 @@
 <?php
+require_once 'db.php';
 
-    require_once 'db.php';
-    $connection = conexaoBanco();
+header('Content-Type: application/json; charset=utf-8');
 
+$conn = conexaoBanco();
 
-    function getPerguntas() {
-        global $connection;
-        $sSelect_perguntas = 'SELECT * FROM perguntas';
-        $result = pg_query($connection, $sSelect_perguntas);
-        $aPerguntas = array();
+$query = "SELECT id_pergunta, texto_pergunta 
+          FROM perguntas 
+          WHERE status = 'ativa'
+          ORDER BY id_pergunta ASC";
 
-        while ($row = pg_fetch_assoc($result)){
-            $aPerguntas[] = $row['texto_pergunta'];
-        }
+$result = pg_query($conn, $query);
 
-        return $aPerguntas;
-    }
+if (!$result) {
+    echo json_encode(["erro" => "Erro ao buscar perguntas"]);
+    exit;
+}
 
+$perguntas = pg_fetch_all($result);
+if (!$perguntas) {
+    $perguntas = []; // Caso não haja nenhuma pergunta
+}
 
+echo json_encode($perguntas);
