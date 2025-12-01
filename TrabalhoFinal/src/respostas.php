@@ -39,7 +39,13 @@ if (isset($input["feedback"])) {
 
     $query = "UPDATE avaliacoes
               SET feedback_textual = $1
-              WHERE id_avaliacao = (SELECT MAX(id_avaliacao) FROM avaliacoes)";
+              WHERE id_avaliacao IN (SELECT id_avaliacao
+                                      FROM avaliacoes
+                                     WHERE id_avaliacao BETWEEN 
+                                                        (SELECT MAX(id_avaliacao) 
+                                                           FROM avaliacoes) - 9
+                                                            AND (SELECT MAX(id_avaliacao) 
+                                                                   FROM avaliacoes))";
 
     $result = pg_query_params($connection, $query, [$feedback]);
 
