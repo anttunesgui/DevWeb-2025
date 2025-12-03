@@ -1,29 +1,14 @@
 document.addEventListener("DOMContentLoaded", async () => {
+
     const perguntasContainer = document.querySelector(".perguntas");
     const botoesContainer = document.querySelector(".botoes");
-
     let perguntas = [];
     let perguntaIndex = 0;
-
-    try {
-        const response = await fetch("../src/get_perguntas.php");
-        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-        perguntas = await response.json();
-
-        console.log("Perguntas carregadas:", perguntas);
-    } catch (error) {
-        console.error("Erro ao carregar perguntas:", error);
-        perguntasContainer.innerHTML = "<h2>Erro ao carregar perguntas.</h2>";
-        return;
-    }
-
-    if (Array.isArray(perguntas) && perguntas.length > 0) {
-        renderPergunta();
-    } else {
-        perguntasContainer.innerHTML = "<h2>Nenhuma pergunta encontrada.</h2>";
-        botoesContainer.style.display = "none"; 
-    }
-
+    const response = await fetch("../src/get_perguntas.php");
+    perguntas = await response.json();
+    
+    renderPergunta();
+  
     function renderPergunta() {
         if (perguntaIndex >= perguntas.length) {
             mostrarFeedback();
@@ -33,7 +18,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const pergunta = perguntas[perguntaIndex];
         perguntasContainer.innerHTML = `<h2>${pergunta.texto_pergunta}</h2>`;
         botoesContainer.innerHTML = "";
-        botoesContainer.style.display = "flex"; // Garantir que está visível
+        botoesContainer.style.display = "flex";
 
         for (let i = 0; i <= 10; i++) {
             const botao = document.createElement("button");
@@ -54,27 +39,17 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     async function enviarAvaliacao(id_pergunta, nota) {
-        try {
-            const res = await fetch("../src/respostas.php", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ 
-                    id_pergunta, 
-                    nota
-                })
-            });
-
-            const data = await res.json();
-            console.log("Resposta do servidor:", data);
-            
-            if (data.erro) {
-                console.error("Erro do servidor:", data.erro);
-            }
-        } catch (e) {
-            console.error("Erro ao enviar resposta:", e);
-        }
-
+        const res = await fetch("../src/respostas.php", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ 
+                id_pergunta, 
+                nota
+            })
+        });
+        const data = await res.json();
         perguntaIndex++;
+
         renderPergunta();
     }
 
@@ -99,20 +74,13 @@ document.addEventListener("DOMContentLoaded", async () => {
         const texto = document.querySelector("#feedback").value.trim();
         
         if (texto !== "") {
-            try {
-                const res = await fetch("../src/respostas.php", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({ feedback: texto })
-                });
-                
-                const data = await res.json();
-                console.log("Feedback salvo:", data);
-            } catch (e) {
-                console.error("Erro ao enviar feedback:", e);
-            }
+            const res = await fetch("../src/respostas.php", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ feedback: texto })
+            });    
+            const data = await res.json();
         }
-
         mostrarAgradecimento();
     }
 

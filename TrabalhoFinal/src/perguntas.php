@@ -1,8 +1,5 @@
 <?php
 require_once 'db.php';
-
-header('Content-Type: application/json; charset=utf-8');
-
 $conn = conexaoBanco();
 
 $query = "SELECT id_pergunta, texto_pergunta 
@@ -19,7 +16,7 @@ if (!$result) {
 
 $perguntas = pg_fetch_all($result);
 if (!$perguntas) {
-    $perguntas = []; // Caso não haja nenhuma pergunta
+    $perguntas = []; 
 }
 
 echo json_encode($perguntas);
