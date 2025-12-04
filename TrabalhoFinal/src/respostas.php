@@ -33,6 +33,6 @@ if (isset($input["feedback"])) {
                                                                    FROM avaliacoes))";
 
     $result = pg_query_params($connection, $query, [$feedback]);
-
 }
+echo json_encode(["erro" => "Dados inválidos"]);
 ?>
