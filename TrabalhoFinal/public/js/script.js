@@ -39,17 +39,12 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     async function enviarAvaliacao(id_pergunta, nota) {
-        const res = await fetch("../src/respostas.php", {
+        await fetch("../src/respostas.php", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ 
-                id_pergunta, 
-                nota
-            })
+            body: JSON.stringify({id_pergunta, nota})
         });
-        const data = await res.json();
         perguntaIndex++;
-
         renderPergunta();
     }
 
@@ -74,12 +69,11 @@ document.addEventListener("DOMContentLoaded", async () => {
         const texto = document.querySelector("#feedback").value.trim();
         
         if (texto !== "") {
-            const res = await fetch("../src/respostas.php", {
+            await fetch("../src/respostas.php", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ feedback: texto })
             });    
-            const data = await res.json();
         }
         mostrarAgradecimento();
     }
