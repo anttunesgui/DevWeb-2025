@@ -16,5 +16,7 @@
       <p>Suas respostas foram registradas com sucesso.</p>
     </footer>
   </div>
+
+  <script src="js/script_obrigado.js"></script>
 </body>
 </html>

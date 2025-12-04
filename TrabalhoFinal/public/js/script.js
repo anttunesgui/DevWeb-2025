@@ -85,11 +85,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     function mostrarAgradecimento() {
-        perguntasContainer.innerHTML = `
-            <h2>Obrigado pela sua avaliação!</h2>
-            <p>Sua opinião é muito importante para nós.</p>
-        `;
-        botoesContainer.innerHTML = "";
-        botoesContainer.style.display = "none";
+       window.location.href = "obrigado.php";
     }
 });

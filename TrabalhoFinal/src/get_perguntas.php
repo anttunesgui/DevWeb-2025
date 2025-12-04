@@ -2,7 +2,7 @@
 require_once 'db.php';
 require_once 'funcoes.php';
 
-$perguntas = getPerguntas(); 
+$perguntas = exibirPerguntas(); 
 
 header('Content-Type: application/json; charset=utf-8');
 echo json_encode($perguntas, JSON_UNESCAPED_UNICODE);
