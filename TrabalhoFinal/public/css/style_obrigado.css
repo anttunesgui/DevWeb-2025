@@ -39,7 +39,6 @@ body {
   font-size: 0.95rem;
 }
 
-/* Responsividade simples */
 @media (max-width: 600px) {
   .agradecimento {
     font-size: 1.2rem;

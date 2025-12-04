@@ -14,10 +14,7 @@ if (isset($input["id_pergunta"]) && isset($input["nota"])) {
     $query = "INSERT INTO avaliacoes (id_setor, id_pergunta, id_dispositivo, resposta)
               VALUES ($1, $2, $3, $4)";
     
-    $result = pg_query_params($connection, $query, [
-        $id_setor, $id_pergunta, $id_dispositivo, $nota
-    ]);
-    
+    $result = pg_query_params($connection, $query, [$id_setor, $id_pergunta, $id_dispositivo, $nota]);
 }
 
 if (isset($input["feedback"])) {
