@@ -1,9 +1,10 @@
 <?php
 require_once 'db.php';
+
 $input = json_decode(file_get_contents("php://input"), true);
 
 $connection = conexaoBanco();
-$id_setor = 1;
+$id_setor = $_GET['setor'] ?? 2;
 $id_dispositivo = 1;
 
 if (isset($input["id_pergunta"]) && isset($input["nota"])) {
@@ -16,7 +17,7 @@ if (isset($input["id_pergunta"]) && isset($input["nota"])) {
     $result = pg_query_params($connection, $query, [
         $id_setor, $id_pergunta, $id_dispositivo, $nota
     ]);
-
+    
 }
 
 if (isset($input["feedback"])) {

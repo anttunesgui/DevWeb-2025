@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Obrigado</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_obrigado.css">
 </head>
 <body>
   <div class="perguntas">
-    <h2 class="agradecimento">Agradecemos sua participação!</h2>
+    <h2 class="agradecimento">O Estabelecimento agradece sua resposta e ela é muito
+importante para nós <br> pois nos ajuda a melhorar continuamente nossos serviços</h2>
   </div>
 
   <div class="rodape">
