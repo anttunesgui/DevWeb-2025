@@ -40,6 +40,5 @@ if($connection){
     }
 
 }else{
-
     echo "Database conectado com sucesso";
 }

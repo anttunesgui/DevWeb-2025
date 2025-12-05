@@ -4,8 +4,15 @@ require_once "../conexao.php";
 
 $connection = conexaoBanco();
 
-$sSelect_Pessoa = 'SELECT * FROM tbpessoa';
-$result = pg_query($connection, $sSelect_Pessoa);
+$filtro = $_GET['nome'] ?? '';
+
+if ($filtro) {
+    $sql = "SELECT * FROM tbpessoa WHERE pesnome ILIKE $1";
+    $result = pg_query_params($connection, $sql, ["%$filtro%"]);
+} else {
+    $sql = "SELECT * FROM tbpessoa";
+    $result = pg_query($connection, $sql);
+}
 
 
 while ($row = pg_fetch_assoc($result)){

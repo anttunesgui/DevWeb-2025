@@ -17,6 +17,13 @@
                 <th>Estado</th>
             </tr>
         </thead>
+        <form method="GET">
+            <label for="">Filtrar nome: </label>
+            <input type="text" id="nome" name="nome">
+            <input type="submit" id="botao" name="botao" onclick="exibefiltros.php" value="Filtrar">
+            <br>
+        </form>
+        <br>
         <tbody>
             <?php include 'exibe.php'; ?>
         </tbody>
