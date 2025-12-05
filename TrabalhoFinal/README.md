@@ -2,7 +2,7 @@ TRABALHO FINAL
 
 INSTALAR O XAMPP <br>
   -Primeiro é necessário instalar o Xampp no seu computador para servir como servidor local. <br>
-  -Nele voce deve intalar o php junto na hora da instalacao.
+  -Nele voce deve intalar o php junto na hora da instalacao. <br>
   -Ao abrir o programa ativar o Apache e o MySql.
 
 CLONAR A PASTA DO TRABALHO <br>
