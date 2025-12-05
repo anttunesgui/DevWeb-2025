@@ -45,4 +45,29 @@ CREATE TABLE avaliacoes (
     CONSTRAINT fk_dispositivo
         FOREIGN KEY (id_dispositivo)
         REFERENCES dispositivos(id_dispositivo)
+
 );
+
+
+
+INSERT INTO perguntas (id_pergunta, texto_pergunta, status) VALUES
+(1, 'Qual sua satisfação geral com o atendimento recebido?', 'ativa'),
+(2, 'Você ficou satisfeito com a limpeza e organização do ambiente?', 'ativa'),
+(3, 'A qualidade dos produtos/serviços atendeu às suas expectativas?', 'ativa'),
+(4, 'O tempo de espera para ser atendido foi adequado?', 'ativa'),
+(5, 'Nossos funcionários foram cordiais e prestativos?', 'ativa'),
+(6, 'Você encontrou facilidade em usar nossos dispositivos de avaliação?', 'ativa'),
+(7, 'Você recomendaria nosso estabelecimento a um amigo ou familiar?', 'ativa'),
+(8, 'Qual sua percepção sobre o custo-benefício dos nossos serviços/produtos?', 'ativa'),
+(9, 'Houve algum aspecto que te deixou insatisfeito durante sua visita?', 'ativa'),
+(10, 'Como você avalia a facilidade de acesso e localização do estabelecimento?', 'ativa');
+
+
+
+INSERT INTO dispositivos (id_dispositivo, nome_dispositivo, status) VALUES
+(1, 'Dispositivo principal', 'ativo');
+
+INSERT INTO setores (id_setor, nome_setor) VALUES
+(1, 'Setor teste');
+
+
